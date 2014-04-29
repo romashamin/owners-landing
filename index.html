@@ -33,6 +33,7 @@
 	#header { height: 120px; }
 	#logo-bw,
 	#logo-oms {
+		display: inline-block;
 		vertical-align: middle;
 		background-repeat: no-repeat;
 	}
@@ -59,13 +60,14 @@
 	}
 	#welcome-copy { width: 570px; margin-top: 30px; }
 
-	#cta-block { position: relative; width: 300px; top: -50px; }
+	#cta-block { position: relative; width: 300px; top: -30px; }
 	#cta-top {
 		width: 300px;
 		padding: 30px 50px;
 		background-color: rgba(255,72,16,.8);
 		color: #fff;
 	}
+	.single-date { display: inline-block; }
 	#subscribe-download { position: relative; width: 190px; left: 100px; }
 
 	#course-value { margin-top: 50px; width: 680px; }
@@ -78,9 +80,15 @@
 	.shift-left { margin-left: 76px; }
 
 	h1 { font-size: 60px; line-height: 68px; letter-spacing: -2px; }
-	h2 { font-size: 32px; line-height: 36px; }
+	h2 {
+		margin-top: 60px;
+		font-size: 32px;
+		line-height: 36px;
+		text-align: center;
+		color: rgb(255,72,16);
+	}
 	#welcome-copy h1 { margin: 0; }
-	.big-nums { font-size: 36px; }
+	.big-nums { display: block; font-size: 36px; }
 	.text-lead { font-size: 24px; line-height: 38px; }
 	.text-small { font-size: 14px; line-height: 18px; }
 	.text-caps { text-transform: uppercase; letter-spacing: 2px; }
@@ -115,8 +123,13 @@
 			</div>
 			<div id="cta-block" class="pull-right">
 				<div id="cta-top" class="centered">
-					<div id="dates-top">
-						<p><span class="big-nums">31</span>&nbsp;<span class=>мая</span> <span class="big-nums">1</span>&nbsp;<span>июня</span></p>
+					<div id="dates-top" class="clfx">
+						<div class="single-date">
+							<span class="big-nums">31</span>&nbsp;<span class=>мая</span>
+						</div>
+						<div class="single-date">
+							<span class="big-nums">1</span>&nbsp;<span>июня</span>
+						</div>
 					</div>
 					<a class="link inverted" href="http://maps.yandex.ru/-/CVf-YCj7">
 						<div id="address-top" class="text-small">
@@ -128,7 +141,7 @@
 					</div>
 					<div id="cta-btn-top">
 						<a class="btn" href="http://brainwashing.pro/marketing#signup/32">Записаться</a>
-						<p class="text-small">Осталось 11 из 14 мест</p>
+						<span class="text-small">Осталось 11 из 14 мест</span>
 					</div>
 				</div>
 				<div id="subscribe-download" class="text-small">

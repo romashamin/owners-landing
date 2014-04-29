@@ -28,8 +28,28 @@
 	.clfx:after { content: " "; display: table; }
 	.clfx:after { clear: both; }
 
-	#main-container { width: 970px; margin: 0 auto; }
-	#header { height: 140px; }
+	#main-container { width: 970px; margin: 0 auto; padding-top: 20px; }
+	#header { height: 120px; }
+	#logo-bw,
+	#logo-oms {
+		display: inline-block;
+		margin-left: 75px;
+		vertical-align: middle;
+		background-repeat: no-repeat;
+	}
+	#logo-bw {
+		background-image: url(img/logo-bw@2x.png);
+		background-size: 202px 52px;
+		width: 202px;
+		height: 52px;
+	}
+	#logo-oms {
+		background-image: url(img/logo-oms@2x.png);
+		background-size: 100px 90px;
+		width: 100px;
+		height: 90px;
+	}
+
 	#welcome-screen {
 		height: 430px;
 		background-image: url(img/main@2x.jpg);
@@ -39,10 +59,9 @@
 	}
 	#welcome-copy { width: 570px; margin-top: 50px; }
 
+	#cta-block { position: relative; width: 300px; top: -50px; }
 	#cta-top {
-		position: relative;
 		width: 300px;
-		top: -50px;
 		padding: 30px 60px;
 		text-align: center;
 		background-color: rgba(255,72,16,.8);
@@ -65,14 +84,17 @@
 	.text-caps { text-transform: uppercase; letter-spacing: 2px; }
 	.strong { font-weight: bold; }
 
-	a { color: rgb(255,72,16); text-decoration: none; }
-	a:hover { color: #ff853c; }
+	.link { color: rgb(255,72,16); text-decoration: none; }
+	.link:hover { color: #ff853c; }
+	.inverted { color: #fffb93; }
+	.inverted:hover { color: #fffeda; border-color: #fffeda; }
 	.btn {
 		display: inline-block;
 		padding: 10px 40px;
-		color: #fffb93;
 		border: solid #fffb93 1px;
 		border-radius: 2px;
+		color: #fffb93;
+		text-decoration: none;
 	}
 	.btn:hover { color: #fffeda; border-color: #fffeda; }
 	.btn:active { opacity: .4; }
@@ -80,26 +102,36 @@
 </head>
 <body>
 	<div id="main-container">
-		<div id="header">Logos</div>
+		<div id="header">
+			<a href="http://brainwashing.pro"><div id="logo-bw"></div></a>
+			<a href="https://ohmystats.com?utm_source=brainwashing&utm_medium=landing&utm_campaign=00_owner-landing"><div id="logo-oms"></div></a>
+		</div>
 		<div id="welcome-screen" class="clfx">
 			<div id="welcome-copy" class="pull-left">
 				<p class="text-caps text-small">Двухдневный интенсив</p>
-				<h1>Маркетинг<br>для интернет-<br>предпринимателя</h1>
+				<h1>Ма&#x301;ркетинг<br>для интернет-<br>предпринимателя</h1>
 				<p>ROI, конверсии, рассылки, контекстная реклама, лендинги, A/B&nbsp;тесты и&nbsp;когортный анализ для владельцев онлайн-бизнеса</p>
 			</div>
-			<div class="pull-right">
+			<div id="cta-block" class="pull-right">
 				<div id="cta-top">
-					<div id="dates">
+					<div id="dates-top">
 						<p><span class="big-nums">31</span>&nbsp;<span class=>мая</span> <span class="big-nums">1</span>&nbsp;<span>июня</span></p>
-						<p class="big-nums">40&nbsp;000&nbsp;₷</p>
-						<a class="btn" href="http://brainwashing.pro/marketing#signup/32">Записаться</a>
 					</div>
-					<div id="address">
-						<p>Штаб-квартира Злых марсиан, Москва</p>
+					<a class="link inverted" href="http://maps.yandex.ru/-/CVf-YCj7">
+						<div id="address-top">
+							<p>Штаб-квартира Злых марсиан, Москва</p>
+						</div>
+					</a>
+					<div id="price-top">
+						<p class="big-nums">50&thinsp;000&nbsp;₷</p>
+					</div>
+					<div id="cta-btn-top">
+						<a class="btn" href="http://brainwashing.pro/marketing#signup/32">Записаться</a>
+						<p class="text-small">Осталось 11 из 14 мест</p>
 					</div>
 				</div>
 				<div id="subscribe-download" class="text-small">
-					<p><a href="http://brainwashing.pro/l/marketing">Подпишитесь и&nbsp;скачайте</a> страницу из материалов прошлого курса</p>
+					<p><a class="link" href="http://brainwashing.pro/l/marketing">Подпишитесь и&nbsp;скачайте</a> страницу из материалов прошлого курса</p>
 				</div>
 			</div>
 		</div>

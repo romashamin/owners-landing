@@ -72,7 +72,8 @@
 
 	#course-value { margin-top: 50px; width: 680px; }
 
-	#host-ak, #host-sk {
+	#host-ak,
+	#host-sk {
 		display: inline-block;
 		width: 480px;
 		padding-left: 76px;
@@ -83,6 +84,13 @@
 	#host-ak { background-image: url(img/photo-ak@2x.jpg); }
 	#host-sk { background-image: url(img/photo-sk@2x.jpg); }
 
+	#contents-sections { padding-left: 76px; }
+	#section-first,
+	#section-second {
+		width: 410px;
+	}
+	.section-list li { margin-top: 12px; line-height: 26px; }
+
 	.pull-left { float: left; }
 	.pull-right { float: right; }
 	.centered { text-align: center; }
@@ -90,10 +98,10 @@
 
 	h1 { font-size: 60px; line-height: 68px; letter-spacing: -2px; }
 	h2 {
-		margin-top: 76px;
-		margin-bottom: 40px;
-		font-size: 32px;
-		line-height: 36px;
+		margin-top: 120px;
+		margin-bottom: 60px;
+		font-size: 36px;
+		line-height: 42px;
 		text-align: center;
 		color: rgb(255,72,16);
 	}
@@ -190,25 +198,25 @@
 		</div>
 		<div id="contents-block">
 			<h2>Инструменты и&nbsp;приемы</h2>
-			<div class="clfx">
-				<div>
-					<p class="strong">Маркетинг</p>
-					<ul>
+			<div id="contents-sections" class="clfx">
+				<div id="section-first" class="pull-left">
+					<h3>Маркетинг</h3>
+					<ol class="section-list">
 						<li>Маркетинговая пирамида</li>
-						<li>Маркетинговая пирамида</li>
+						<li>Контекстная реклама</li>
 						<li>Партнерские программы</li>
 						<li>SMM и&nbsp;SEO</li>
 						<li>B2B-маркетинг</li>
 						<li>Лендинги (продающие страницы)</li>
 						<li>A/B-тесты</li>
 						<li>Массовые емейл-рассылки</li>
-						<li>Триггерные рассылки, цепочки писем</li>
+						<li>Триггерные рассылки,<br>цепочки писем</li>
 						<li>Ретаргетинг</li>
 					</ul>
 				</div>
-				<div>
-					<p class="strong">Аналитика</p>
-					<ul>
+				<div id="section-second" class="pull-right">
+					<h3>Аналитика</h3>
+					<ol class="section-list">
 						<li>AARRR и&nbsp;vanity-метрики</li>
 						<li>ROI-аналитика</li>
 						<li>LTV vs&nbsp;CAC</li>
@@ -220,8 +228,8 @@
 					</ul>
 				</div>
 			</div>
-			<div>
-				<p class="strong">Курс содержит 27 реальных кейсов</p>
+			<div class="shift-left">
+				<h3>Курс содержит 27 реальных кейсов</h3>
 				<p>Среди них: Badoo, Groupon и порнотрафик; интернет-маркетинг и оптовая торговля туалетной бумагой; почему «скукожился» бизнес Groupon.</p>
 			</div>
 		</div>

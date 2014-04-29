@@ -33,8 +33,6 @@
 	#header { height: 120px; }
 	#logo-bw,
 	#logo-oms {
-		display: inline-block;
-		margin-left: 75px;
 		vertical-align: middle;
 		background-repeat: no-repeat;
 	}
@@ -45,6 +43,7 @@
 		height: 52px;
 	}
 	#logo-oms {
+		margin-left: 66px;
 		background-image: url(img/logo-oms@2x.png);
 		background-size: 100px 90px;
 		width: 100px;
@@ -70,8 +69,8 @@
 	#subscribe-download { position: relative; width: 190px; left: 100px; }
 
 	#course-value { margin-top: 50px; width: 680px; }
-	/*#value-copy { width: 580px; }
-	#audience { width: 288px; }*/
+
+	#host-ak, #host-sk { width: 315px; }
 
 	.pull-left { float: left; }
 	.pull-right { float: right; }
@@ -106,7 +105,6 @@
 <body>
 	<div id="main-container">
 		<div id="header">
-			<a href="http://brainwashing.pro"><div id="logo-bw"></div></a>
 			<a href="https://ohmystats.com?utm_source=brainwashing&utm_medium=landing&utm_campaign=00_owner-landing"><div id="logo-oms"></div></a>
 		</div>
 		<div id="welcome-screen" class="clfx">
@@ -130,7 +128,7 @@
 					</div>
 					<div id="cta-btn-top">
 						<a class="btn" href="http://brainwashing.pro/marketing#signup/32">Записаться</a>
-						<p class="text-small centered">Осталось 11 из 14 мест</p>
+						<p class="text-small">Осталось 11 из 14 мест</p>
 					</div>
 				</div>
 				<div id="subscribe-download" class="text-small">
@@ -149,60 +147,141 @@
 				<p>Занятия проходят в&nbsp;субботу и&nbsp;воскресенье с&nbsp;10 утра и&nbsp;до позднего вечера. Теоретические блоки сопровождаются реальными бизнес‑кейсами и&nbsp;практическими задачами.</p>
 			</div>
 		</div>
-		<div id="hosts">
+		<div id="hosts-block">
 			<h2>Инструкторы</h2>
-			<div class="pull-left">
-				<img src="img/">
-				<p class="strong">Алексей Куличевский</p>
-				<p>Со-основатель и&nbsp;CEO Oh My Stats. Ранее директор по маркетингу Groupon Russia и главный по контексту в Островке.</p>
-			</div>
-			<div class="pull-right">
-				<img src="img/">
-				<p class="strong">Светлана Кузьмина</p>
-				<p>Консультант Oh My Stats. Ранее директор по аналитике и Business Intelligence в Groupon Russia. Большой опыт в стратегическом консалтинге.</p>
+			<div id="hosts" class="clfx">
+				<div id="host-ak" class="pull-left">
+					<img src="img/">
+					<p class="strong">Алексей Куличевский</p>
+					<p>Со-основатель и CEO Oh My Stats. Ранее — директор по маркетингу Groupon Russia и главный по контексту в Островке.</p>
+				</div>
+				<div id="host-sk" class="pull-right">
+					<img src="img/">
+					<p class="strong">Светлана Кузьмина</p>
+					<p>Консультант Oh My Stats. Ранее — директор по аналитике и Business Intelligence в Groupon Russia. Большой опыт в стратегическом консалтинге.</p>
+				</div>
 			</div>
 			<div>
 				<p class="strong">Cпециальные гости прошлых курсов</p>
-				<p>Максим Уваров (контрибьютор Marketing-wiki.ru, К50, Wikimart), Дмитрий Христокян (Groupon Russia, ТКС Банк), Татьяна Носкова (Google Russia)</p>
+				<p>Максим Уваров (контрибьютор marketing-wiki.ru, К50, Wikimart), Дмитрий Христокян (Groupon Russia, ТКС Банк), Татьяна Носкова (Google Russia).</p>
 			</div>
 		</div>
-		<div id="contents">
-			<h2>Программа</h2>
-			<div class="pull-left">
-				<p class="strong">Суббота</p>
-				<ul>
-					<li>Что такое маркетинг и как с ним бороться?</li>
-					<li>10 лучших каналов привлечения клиентов.</li>
-					<li>Лучшие практики оптимизации посадочных страниц.</li>
-					<li>Возвращение клиентов: рассылки и ремаркетинг.</li>
-					<li>Как продавать больше: кросс‑продажи.</li>
-					<li>Программы лояльности.</li>
-				</ul>
-			</div>
-			<div class="pull-right">
-				<p class="strong">Воскресенье</p>
-				<ul>
-					<li>Подробно об аналитике. 10 лучших инструментов.</li>
-					<li>Когортный анализ, RFM‑анализ.</li>
-					<li>Практика построения отчетов в Экселе.</li>
-					<li>Разрабатываем маркетинговую стратегию.</li>
-				</ul>
+		<div id="contents-block">
+			<h2>Инструменты и приемы</h2>
+			<div class="clfx">
+				<div>
+					<p class="strong">Маркетинг</p>
+					<ul>
+						<li>Маркетинговая пирамида</li>
+						<li>Маркетинговая пирамида</li>
+						<li>Партнерские программы</li>
+						<li>SMM и SEO</li>
+						<li>B2B-маркетинг</li>
+						<li>Лендинги (продающие страницы)</li>
+						<li>A/B-тесты</li>
+						<li>Массовые емейл-рассылки</li>
+						<li>Триггерные рассылки, цепочки писем</li>
+						<li>Ретаргетинг</li>
+					</ul>
+				</div>
+				<div>
+					<p class="strong">Аналитика</p>
+					<ul>
+						<li>AARRR и vanity-метрики</li>
+						<li>ROI-аналитика</li>
+						<li>LTV vs CAC</li>
+						<li>Модели атрибуции</li>
+						<li>Когортный анализ</li>
+						<li>Дэшборды и отчеты</li>
+						<li>RFM-анализ</li>
+						<li>Секретное кунг-фу в Excel</li>
+					</ul>
+				</div>
 			</div>
 			<div>
-				<p class="strong">Курс содержит NN реальных кейсов</p>
-				<p>Среди них: «Как Островок обхитрил Букинг.ком», «Какая связь между Групоном и торговлей наркотиками», «Почему CEO Купивип держит на столе плюшевого мишку».</p>
+				<p class="strong">Курс содержит 27 реальных кейсов</p>
+				<p>Среди них: Badoo, Groupon и порнотрафик; интернет-маркетинг и оптовая торговля туалетной бумагой; почему «скукожился» бизнес Groupon.</p>
 			</div>
 		</div>
 		<div id="direct-speech">
-			<div class="pull-left">
+			<div>
 				<img src="img/">
 			</div>
-			<div class="pull-right">
-				<p class="text-lead">Я понимаю, курс кажется дорогим. Более того, если у вас очень маленькая компания из вас и вашего друга, то окупится курс через время. Если ваш бизнес хоть немного больше, вы окупите его внедрив уже первый прием.</p>
+			<div>
+				<p class="text-lead">Курс — это инвестиция в ваш маркетинг. Инвестиция должна окупаться. Слушатели рассказывали, что применение методов с курса помогло им окупить затраты за 2-3 месяца. Если вы сомневаетесь, сможете ли окупить затраты, возможно, курс пока не для вас.</p>
 				<div>
 					<p class="strong">Алексей Куличевский</p>
 					<p class="small">Инструктор и автор курса</p>
 				</div>
+			</div>
+		</div>
+		<div id="cta-middle">
+			<div id="dates-middle">
+				<p><span class="big-nums">31</span>&nbsp;<span class=>мая</span> <span class="big-nums">1</span>&nbsp;<span>июня</span></p>
+			</div>
+			<a class="link inverted" href="http://maps.yandex.ru/-/CVf-YCj7">
+				<div id="address-middle" class="text-small">
+					<p>Штаб-квартира Злых марсиан, Москва</p>
+				</div>
+			</a>
+			<div id="price-middle">
+				<p class="big-nums">50&thinsp;000&nbsp;₷</p>
+			</div>
+			<div id="cta-btn-middle">
+				<a class="btn" href="http://brainwashing.pro/marketing#signup/32">Записаться на курс</a>
+				<p class="text-small">Осталось 11 из 14 мест</p>
+			</div>
+			<div>
+				<p class="strong">Вы также получите</p>
+				<p>Раздаточные материалы, презентацию с материалами и кратким содержанием курса.</p>
+			</div>
+		</div>
+		<div id="testimonials">
+			<h2>Отзывы участников</h2>
+			<div>
+				<p>Cамое удачное вложение денег Гетвеара за последний год :) Леша действительно крут в&nbsp;маркетинге и&nbsp;аналитике.</p>
+				<div>
+					<p>Слава Олесик</p>
+					<p>Getwear</p>
+				</div>
+			</div>
+		</div>
+		<div id="ohmyblog">
+			<h2>Блог Oh&nbsp;My&nbsp;Stats</h2>
+			<p>Каждую неделю рассказываем, как получить больше от маркетинга, продаж и аналитики. Подписывайтесь, чтобы раньше всех получать новые статьи.</p>
+			<a href="http://blog.ohmystats.com/cohort-analysis/">
+				<div class="blog-post">
+					<img class="blog-img" src="https://ohmystats.com/assets/home/cohort-post-bd2fdf2a9e0187154a711cd262359099.png">
+					<h3>Когортный анализ в маркетинге интернет‑магазина</h3>
+					<p>Как прогнозировать эффективность рекламы и следить за здоровьем бизнеса.</p>
+				</div>
+			</a>
+			<a href="http://blog.ohmystats.com/kak-pravilno-planirovat-marketingovyie-zatratyi/">
+				<div class="blog-post">
+					<img class="blog-img" src="https://ohmystats.com/assets/home/marketing-post-799199c573d3ebe23c149dd5d34dcb9c.png">
+					<h3>Как правильно планировать маркетинговые затраты</h3>
+					<p>Почему при планировании бюджета на маркетинг стоит использовать LTV, а не ARPU.</p>
+				</div>
+			</a>
+			<a href="http://blog.ohmystats.com/kak-prodavat-slozhnyie-produktyi-v-internete/">
+				<div class="blog-post">
+					<img class="blog-img" src="https://ohmystats.com/assets/home/complicated-post-2bc2fb58da9eca35d8b9701dc946b07e.png">
+					<h3>Как продавать сложные продукты в интернете</h3>
+					<p>Как продуктам в интернете конкурировать с тетрадками главврачей.</p>
+				</div>
+			</a>
+		</div>
+		<div id="footer">
+			<div id="copyright">
+				<p>Учебные курсы «Брэйнвошинг»</p>
+				<p>2011…2014</p>
+			</div>
+			<div id="contacts">
+				<p>Пишите: <a href="mailto:ts@evilmartians.com">ts@evilmartians.com</a></p>
+				<p>Звоните: +7 (499) 705-78-30</p>
+			</div>
+			<div>
+				<a href="http://brainwashing.pro"><div id="logo-bw"></div></a>
 			</div>
 		</div>
 	</div>

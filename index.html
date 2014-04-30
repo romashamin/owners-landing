@@ -118,6 +118,51 @@
 	#price-middle	{ padding-top: 3px; }
 	#cta-btn-middle	{ margin-top: 40px; }
 
+	#testimonials-block { padding-left: 76px; padding-right: 76px; }
+	.testimonial, .testimonial-big { position: relative; margin-top: 50px; margin-bottom: 50px; }
+	.testimonial::before,
+	.testimonial-big::before {
+		position: absolute;
+		content: "“";
+		color: rgb(255,72,16);
+		font-family: Georgia, "Times New Roman", serif;
+	}
+	.testimonial::before		{ top: 14px; left: -40px; font-size: 60px; }
+	.testimonial-big::before	{ top: 22px; left: -50px; font-size: 90px; }
+	.testimonial-big p { font-size: 24px; line-height: 38px; }
+	.with-answer	{ position: relative; width: 500px; }
+	.original-cite	{ padding-top: 9px; font-style: normal; }
+	.testimonial-author {
+		height: 55px;
+		padding-left: 75px;
+		padding-top: 2px;
+		background-size: 55px 55px;
+		background-repeat: no-repeat;
+	}
+	.author-name	{ font-weight: bold; }
+	.author-company { font-size: 14px; line-height: 18px; }
+	.answer {
+		position: absolute;
+		width: 188px;
+		padding: 10px;
+		top: 2px;
+		left: 550px;
+		color: rgb(255,72,16);
+		border: solid rgb(255,72,16) 1px;
+		font-size: 13px;
+		line-height: 19px;
+	}
+	.testimonial-author span { display: block; }
+
+	#levanov	{ background-image: url(img/userpic-levanov@2x.jpg); }
+	#krykin		{ background-image: url(img/userpic-krykin@2x.jpg); }
+	#kutovaya	{ background-image: url(img/userpic-kutovaya@2x.jpg); }
+	#levdanov	{ background-image: url(img/userpic-levdanov@2x.jpg); }
+	#ivanova	{ background-image: url(img/userpic-ivanova@2x.jpg); }
+	#bahvalov	{ background-image: url(img/userpic-bahvalov@2x.jpg); }
+	#sennikova	{ background-image: url(img/userpic-sennikova@2x.jpg); }
+	#mordovskoy	{ background-image: url(img/userpic-mordovskoy@2x.jpg); }
+
 	.pull-left	{ float: left; }
 	.pull-right	{ float: right; }
 	.centered	{ text-align: center; }
@@ -296,15 +341,63 @@
 				<p class="text-small">Осталось 11 из 14 мест</p>
 			</div>
 		</div>
-		<div id="testimonials">
+		<div id="testimonials-block">
 			<h2>Отзывы участников</h2>
-			<div>
-				<p>Cамое удачное вложение денег Гетвеара за последний год :) Леша действительно крут в&nbsp;маркетинге и&nbsp;аналитике.</p>
-				<div>
-					<p>Слава Олесик</p>
-					<p>Getwear</p>
-				</div>
-			</div>
+			<blockquote class="testimonial-big">
+				<p>Отличный курс. Реально перезагружает тебя и&nbsp;структурирует данные с&nbsp;практической точки зрения. Улучшать можно только в&nbsp;сторону увеличения практики. Ещё больше практики!</p>
+				<footer id="levanov" class="testimonial-author">
+					<cite class="original-cite text-small pull-right"><a class="link" href="https://www.facebook.com/levanstein/posts/10203642918537314">Более эмоциональный отзыв в&nbsp;Фейсбуке Юрия</a></cite>
+					<div><span class="author-name">Юрий Леванов</span> <span class="author-company">Основатель&nbsp;и&nbsp;CEO Dialoggy.com</span></div>
+				</footer>
+			</blockquote>
+			<blockquote class="testimonial">
+				<p>Необходимо каждому продукт‑менеджеру и&nbsp;маркетологу. Жаль, что не&nbsp;посетил раньше. Очень интенсивный курс, отоспитесь заранее :)</p>
+				<footer id="krykin" class="testimonial-author">
+					<div><span class="author-name">Никита Крыкин</span> <span class="author-company">Ingate Future</span></div>
+				</footer>
+			</blockquote>
+			<blockquote class="testimonial">
+				<p>Очень рекомендую брейнвошинг по&nbsp;интернет-маркетингу от&nbsp;Evil&nbsp;Martians: ребята за&nbsp;два дня ставят мозги на&nbsp;место, показывают метрики, которые влияют на&nbsp;здоровье бизнеса и&nbsp;рассказывают, как с&nbsp;ними работать, учат правильно оценивать эффективность рекламных каналов и&nbsp;дружить с&nbsp;<abbr title="Customer Lifetime Value — итоговая ценность клиента">LTV</abbr>, <abbr title="Acquisition, Activation, Retention, Referral, Revenue. Известны как «Пиратские метрики» Дэйва Макклюра">AARRR</abbr>, <abbr title="Recency, Frequency, Monetary Value ">RFM</abbr> и&nbsp;когортами. Дают нетривиальные и&nbsp;реально практические вещи. Мой мир больше не&nbsp;будет прежним :)</p>
+				<footer id="kutovaya" class="testimonial-author">
+					<cite class="original-cite text-small pull-right"><a class="link" href="https://www.facebook.com/kutokate/posts/729277737094313">Оригинал отзыва в&nbsp;Фейсбуке Екатерины</a></cite>
+					<div><span class="author-name">Екатерина Кутовая</span> <span class="author-company">СКБ «Контур»</span></div>
+				</footer>
+			</blockquote>
+			<blockquote class="twitter-tweet" align="center" data-link-color="#ff4810" lang="ru"><p><a href="https://twitter.com/search?q=%23brainwashingpro&amp;src=hash">#brainwashingpro</a> самое удачное вложение денег Гетвеара за последний год :) Леша <a href="https://twitter.com/smysl">@smysl</a> действительно крут в маркетинге и аналитике.</p>&mdash; Slava Olesik (@slavaolesik) <a href="https://twitter.com/slavaolesik/statuses/401792408566112256">November 16, 2013</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<blockquote class="testimonial">
+				<p>Интернет‑маркетинг уже никогда не&nbsp;будет прежним! Два дня интенсива на&nbsp;курсах от&nbsp;ребят из&nbsp;Oh&nbsp;My&nbsp;Stats пролетели незаметно: кейсы, цифры, таблицы, кофе, аналитика, ребдул, практика и&nbsp;общение с&nbsp;увлеченными людьми&nbsp;&mdash; повторить&nbsp;бы всё это еще раз! Я&nbsp;поймал маркетинг‑дзен&nbsp;&mdash; состоянии нирваны: мысли улеглись, главная бизнес‑цель кристаллизовалась. Остались только метрики, имеющие ценность. AARRR!!! Спасибо, что ROI! (живой)</p>
+				<footer id="levdanov" class="testimonial-author">
+					<cite class="original-cite text-small pull-right"><a class="link" href="https://www.facebook.com/levdanov/posts/627059897339815">Оригинал отзыва в&nbsp;Фейсбуке Леонида</a></cite>
+					<div><span class="author-name">Леонид Левданов</span> <span class="author-company">GlamGlam</span></div>
+				</footer>
+			</blockquote>
+			<blockquote class="twitter-tweet" align="center" data-link-color="#ff4810" lang="ru"><p>LTV, AARRR, RFM и когортный анализ - мои лучшие друзья теперь. Интернет-маркетинг-выходные удались. Спасибо злым марсианам за брейнвошинг!</p>&mdash; Vera Ezhkina (@madverka) <a href="https://twitter.com/madverka/statuses/452864630629863424">April 6, 2014</a></blockquote><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<blockquote class="testimonial">
+				<p>Курс очень интересный и&nbsp;безумно полезный. Я&nbsp;уже не&nbsp;могу дождаться начала рабочей недели, чтобы начать применять полученные знания :) Курс будет полезен не&nbsp;только маркетологам, но&nbsp;и&nbsp;продакт‑менеджерам, как в&nbsp;моём случае.</p>
+				<footer id="ivanova" class="testimonial-author">
+					<div><span class="author-name">Анна Иванова</span> <span class="author-company">Dream Industries</span></div>
+				</footer>
+			</blockquote>
+			<blockquote class="testimonial-big with-answer">
+				<p>Круто: много классной информации/много тем; круто, что понимаешь, в&nbsp;каком направлении развиваться. Не&nbsp;круто: мало времени, нет возможности разобрать кейсы клиентов.</p>
+				<footer id="bahvalov" class="testimonial-author">
+					<div><span class="author-name">Виталий Бахвалов</span> <span class="author-company">РЕ-СИТИ</span></div>
+				</footer>
+				<div class="answer">Справедливая критика, спасибо! В&nbsp;этом курсе мы&nbsp;ограничили количество мест, чтобы разобрать кейсы слушателей.<br>— Алексей Куличевский</div>
+			</blockquote>
+			<blockquote class="testimonial">
+				<p>Курс, в&nbsp;первую очередь, об&nbsp;аналитике. Будет полезен маркетологам, связанным с&nbsp;привлечением, удержанием и&nbsp;анализом трафика. Для creative marketing будет сложен. Информации по&nbsp;маркетинговым активностям, context adv недостаточно. Но&nbsp;аналитика пользовательской базы дана хорошо.</p>
+				<footer id="sennikova" class="testimonial-author">
+					<div><span class="author-name">Татьяна Сенникова</span> <span class="author-company">Dream Industries</span></div>
+				</footer>
+			</blockquote>
+			<blockquote class="testimonial with-answer">
+				<p>Нет чёткой структуры курса и&nbsp;цели, которую он&nbsp;преследует. Т.&nbsp;е. это такой workshop по&nbsp;некоторым техникам и&nbsp;текущим технологиям. Было&nbsp;бы здорово, чтобы на&nbsp;выходе получался конкретный результат. Но&nbsp;это, наверное, будет другой курс.</p>
+				<footer id="mordovskoy" class="testimonial-author">
+					<div><span class="author-name">Даниил Мордовской</span> <span class="author-company">Groupon Russia</span></div>
+				</footer>
+				<div class="answer">К&nbsp;сожалению, так происходит, когда среди слушателей и&nbsp;маркетологи, и&nbsp;CEO, и&nbsp;продуктовики. Именно поэтому, в&nbsp;этот раз, мы&nbsp;сделали &laquo;прицельный&raquo; курс для владельцев бизнеса.<br>— Алексей Куличевский</div>
+			</blockquote>
 		</div>
 		<div id="ohmyblog">
 			<h2>Блог Oh&nbsp;My&nbsp;Stats</h2>

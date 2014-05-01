@@ -283,7 +283,7 @@
 					</div>
 					<div id="cta-btn-top">
 						<a class="btn btn-1c" href="http://brainwashing.pro/marketing#signup/32?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_cta-top">Записаться</a>
-						<span class="text-small">Осталось 11 из 14 мест</span>
+						<span class="text-small">Осталось <span class="available-seats"></span> из 14 мест</span>
 					</div>
 				</div>
 				<div id="subscribe-download" class="text-small">
@@ -387,7 +387,7 @@
 			</div>
 			<div id="cta-btn-middle">
 				<a class="btn btn-1c" href="http://brainwashing.pro/marketing#signup/32?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_cta-middle">Записаться на курс</a>
-				<p class="text-small">Осталось 11 из 14 мест</p>
+				<p class="text-small">Осталось <span class="available-seats"></span> из 14 мест</p>
 			</div>
 		</div>
 		<div id="testimonials-block">
@@ -490,6 +490,19 @@
 		</div>
 	</div>
 <script type="text/javascript">
+(function() {
+
+	window.onload = function() {
+		var availableSeats = 11;
+		placeAvailableSeatsNum(availableSeats);
+	};
+
+	function placeAvailableSeatsNum(availableSeats) {
+		var nodes = document.getElementsByClassName("available-seats");
+		for (var i = 0, max = nodes.length; i < max; i++) nodes[i].innerHTML = "" + availableSeats;
+	}
+
+}).call(this);
 </script>
 </body>
 </html>

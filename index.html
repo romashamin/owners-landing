@@ -166,8 +166,13 @@
 	.blog-post, .footer-part { width: 320px; float: left; padding: 20px; }
 	.blog-img	{ width: 280px; }
 	.blog-post-link { color: #000; }
-	.blog-post:hover	{ box-shadow: inset 0 0 0 1px rgb(255,72,16); }
-	.blog-post:hover h3	{ color: rgb(255,72,16); }
+	.blog-post:hover { box-shadow: inset 0 0 0 1px rgb(255,72,16); }
+	.blog-post:hover h3	{
+		color: rgb(255,72,16);
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
 
 	#footer { padding-top: 80px; padding-bottom: 40px; }
 	.footer-part p { margin: 0;}
@@ -197,18 +202,52 @@
 	.strong		{ font-weight: bold; }
 
 	.link { color: rgb(255,72,16); text-decoration: none; }
-	.link:hover { color: #ff853c; }
+	.link:hover {
+		color: #ff853c;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
 	.inverted { color: #fffb93; }
 	.inverted:hover { color: #fffeda; border-color: #fffeda; }
+
 	.btn {
 		display: inline-block;
+		position: relative;
 		padding: 10px 40px;
+		z-index: 1;
+		background: none;
+		cursor: pointer;
 		border: solid #fffb93 1px;
 		border-radius: 2px;
 		color: #fffb93;
 		text-decoration: none;
+		outline: none;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
 	}
-	.btn:hover { color: #fffeda; border-color: #fffeda; }
+	.btn:after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	/*
+		Animation based on Codrops Button 1c
+		http://tympanus.net/codrops/2013/06/13/creative-button-styles/
+	*/
+	.btn-1c:after {
+		width: 0%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: #fffb93;
+	}
+	.btn-1c:hover, .btn-1c:active { color: rgb(255,72,16); }
+	.btn-1c:hover:after, .btn-1c:active:after { width: 100%; }
 	.btn:active { opacity: .4; }
 </style>
 </head>
@@ -242,7 +281,7 @@
 						<p class="big-nums">50&thinsp;000&nbsp;₷</p>
 					</div>
 					<div id="cta-btn-top">
-						<a class="btn" href="http://brainwashing.pro/marketing#signup/32">Записаться</a>
+						<a class="btn btn-1c" href="http://brainwashing.pro/marketing#signup/32">Записаться</a>
 						<span class="text-small">Осталось 11 из 14 мест</span>
 					</div>
 				</div>
@@ -346,7 +385,7 @@
 				<p>Раздаточные материалы, презентацию с&nbsp;материалами и&nbsp;кратким содержанием курса.</p>
 			</div>
 			<div id="cta-btn-middle">
-				<a class="btn" href="http://brainwashing.pro/marketing#signup/32">Записаться на курс</a>
+				<a class="btn btn-1c" href="http://brainwashing.pro/marketing#signup/32">Записаться на курс</a>
 				<p class="text-small">Осталось 11 из 14 мест</p>
 			</div>
 		</div>

@@ -70,7 +70,12 @@
 
 	.single-date { display: inline-block; margin: 0 5px; }
 
-	#course-value { margin-top: 50px; width: 680px; }
+	#course-value { margin: 50px 76px 0 76px; }
+	#value-copy	{ position: relative; margin: 0 76px; }
+	#value-copy:before	{ top: 22px; left: -76px; font-size: 90px; }
+	#audience, #details	{ float: left; }
+	#audience	{ width: 480px; padding-right: 20px; }
+	#details	{ width: 338px; padding-left: 5px; }
 
 	#host-ak,
 	#host-sk {
@@ -115,7 +120,8 @@
 	#testimonials-block { padding-left: 76px; padding-right: 76px; }
 	.testimonial, .testimonial-big { position: relative; margin-top: 50px; margin-bottom: 50px; }
 	.testimonial::before,
-	.testimonial-big::before {
+	.testimonial-big::before,
+	#value-copy:before {
 		position: absolute;
 		content: "“";
 		color: rgb(255,72,16);
@@ -291,15 +297,17 @@
 		</div>
 	</div>
 	<div id="main-container">
-		<div id="course-value" class="shift-left">
+		<div id="course-value">
 			<div id="value-copy">
-				<p class="text-lead">Маркетолога нанимают после первого миллиона. До&nbsp;этого маркетингом занимается основатель. Курс знакомит с&nbsp;современными маркетинговыми инструментами, объясняет, как их применять, учит работать с&nbsp;данными и&nbsp;принимать решения на их основе.</p>
+				<p class="text-lead">Маркетолога нанимают после первого миллиона. До&nbsp;этого маркетингом занимается основатель.<br>Курс знакомит с&nbsp;современными маркетинговыми инструментами, объясняет, как их применять,<br>учит работать с&nbsp;данными и&nbsp;принимать решения<br>на их основе.</p>
 			</div>
-			<div id="audience">
-				<p>Курс рассчитан на владельцев интернет-магазинов и&nbsp;основателей стартапов: только собственник мотивирован распоряжаться своими деньгами наиболее эффективно. Отдельно мы рассмотрим, как нанимать и&nbsp;увольнять маркетологов.</p>
-			</div>
-			<div id="details">
-				<p>Занятия проходят в&nbsp;субботу и&nbsp;воскресенье с&nbsp;10 утра и&nbsp;до позднего вечера. Теоретические блоки сопровождаются реальными бизнес‑кейсами и&nbsp;практическими задачами.</p>
+			<div class="clfx">
+				<div id="audience">
+					<p>Курс рассчитан на владельцев интернет-магазинов и&nbsp;основателей стартапов: только собственник мотивирован распоряжаться своими деньгами наиболее эффективно.</p><p>Отдельно мы рассмотрим, как нанимать и&nbsp;увольнять маркетологов.</p>
+				</div>
+				<div id="details">
+					<p>Занятия проходят в&nbsp;субботу и&nbsp;воскресенье с&nbsp;10 утра и&nbsp;до позднего вечера. Теоретические блоки сопровождаются реальными бизнес‑кейсами и&nbsp;практическими задачами.</p>
+				</div>
 			</div>
 		</div>
 		<div id="hosts-block">

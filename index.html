@@ -256,14 +256,61 @@
 	.btn-1c:hover, .btn-1c:active { color: rgb(255,72,16); }
 	.btn-1c:hover:after, .btn-1c:active:after { width: 100%; }
 	.btn:active { opacity: .4; }
+
+	.fade-bottom {
+		position: relative;
+		-webkit-animation:	fade-bottom-animation cubic-bezier(0.95, 0.05, 0.795, 0.035) .6s;
+		-moz-animation:		fade-bottom-animation cubic-bezier(0.95, 0.05, 0.795, 0.035) .6s;
+		-o-animation:		fade-bottom-animation cubic-bezier(0.95, 0.05, 0.795, 0.035) .6s;
+		animation:			fade-bottom-animation cubic-bezier(0.95, 0.05, 0.795, 0.035) .6s;
+	}
+	@-webkit-keyframes fade-bottom-animation {
+		0%   { opacity: 0; top: 200px; }
+		100% { opacity: 1; top: 0; }
+	}
+	@-moz-keyframes fade-bottom-animation {
+		0%   { opacity: 0; top: 200px; }
+		100% { opacity: 1; top: 0; }
+	}
+	@-o-keyframes fade-bottom-animation {
+		0%   { opacity: 0; top: 200px; }
+		100% { opacity: 1; top: 0; }
+	}
+	@keyframes fade-bottom-animation {
+		0%   { opacity: 0; top: 200px; }
+		100% { opacity: 1; top: 0; }
+	}
+	.fade-opacity {
+		position: relative;
+		-webkit-animation:	fade-opacity-animation cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s;
+		-moz-animation:		fade-opacity-animation cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s;
+		-o-animation:		fade-opacity-animation cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s;
+		animation:			fade-opacity-animation cubic-bezier(0.95, 0.05, 0.795, 0.035) 2s;
+	}
+	@-webkit-keyframes fade-opacity-animation {
+		0%   { opacity: 0; }
+		100% { opacity: 1; }
+	}
+	@-moz-keyframes fade-opacity-animation {
+		0%   { opacity: 0; }
+		100% { opacity: 1; }
+	}
+	@-o-keyframes fade-opacity-animation {
+		0%   { opacity: 0; }
+		100% { opacity: 1; }
+	}
+	@keyframes fade-opacity-animation {
+		0%   { opacity: 0; }
+		100% { opacity: 1; }
+	}
 </style>
 </head>
 <body>
 	<div class="bgimage">
 		<div id="header">
-			<a href="https://ohmystats.com?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_logo-oms"><div id="logo-oms"></div></a>
+			<a href="https://ohmystats.com?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_logo-oms"><div id="logo-oms" class="fade-opacity"></div></a>
 		</div>
-		<div class="main-copy">
+		<div class="main-copy fade-bottom">
 			<p class="text-caps text-small">Двухдневный интенсив</p>
 			<h1><span class="text-huge">Ма&#x301;ркетинг</span><br>для интернет-предпринимателя</h1>
 			<p>ROI, конверсии, рассылки, контекстная реклама,<br>лендинги, A/B&nbsp;тесты и&nbsp;когортный анализ<br>для владельцев онлайн-бизнеса</p>

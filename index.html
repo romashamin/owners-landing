@@ -66,6 +66,17 @@
 
 	.main-copy { margin-top: 100px; text-align: center; }
 
+	.social-buttons	{
+		width: 500px;
+		margin: 0 auto;
+		margin-top: 40px;
+		opacity: 0;
+		overflow: hidden;
+		transition: opacity 200ms;
+	}
+	.is-sharing .social-buttons { opacity: 1; overflow: visible; }
+	.social-button	{ width: 200px; float: left; margin-left: 20px; }
+
 	.cta { background-color: rgb(255,72,16); color: #fff; text-align: center; }
 	.cta-floor { margin-top: 0; padding: 76px 40px 36px; }
 	.cta-btn-block	{ margin-top: 40px; margin-bottom: 40px; }
@@ -309,6 +320,14 @@
 </style>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<div class="bgimage">
 		<div id="header">
 			<a href="https://ohmystats.com?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_logo-oms"><div id="logo-oms" class="fade-opacity"></div></a>
@@ -317,6 +336,15 @@
 			<p class="text-caps text-small">Двухдневный интенсив</p>
 			<h1><span class="text-huge">Ма&#x301;ркетинг</span><br>для интернет-предпринимателя</h1>
 			<p>ROI, конверсии, рассылки, контекстная реклама,<br>лендинги, A/B&nbsp;тесты и&nbsp;когортный анализ<br>для владельцев онлайн-бизнеса</p>
+		</div>
+		<div class="social-buttons clfx">
+			<div class="social-button">
+				<div class="fb-like" data-href="https://ohmystats.com/brainwashing/" data-width="200" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="true"></div>
+			</div>
+			<div class="social-button">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-text="Маркетинг для интернет-предпринимателя — курс от ex-CMO Groupon Russia" data-via="ohmystats" data-lang="ru" data-hashtags="brainwashingpro">Твитнуть</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+			</div>
 		</div>
 	</div>
 	<div id="cta-top" class="cta cta-floor">
@@ -566,6 +594,8 @@
 
 	window.onload = function() {
 		var s = skrollr.init();
+
+		setTimeout(function() { document.body.className += ' is-sharing'; }, 2000);
 
 		var availableSeats = 11;
 		placeAvailableSeatsNum(availableSeats);

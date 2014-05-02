@@ -186,6 +186,7 @@
 	.pull-right	{ float: right; }
 	.centered	{ text-align: center; }
 	.shift-left	{ margin-left: 76px; }
+	.posrel		{ position: relative; }
 	.no-margin-no-padding { margin: 0; padding: 0; }
 
 	h1 { font-size: 34px; line-height: 56px; }
@@ -306,11 +307,11 @@
 </style>
 </head>
 <body>
-	<div class="bgimage">
+	<div class="bgimage" data-0="background-position: 0px 0px;" data-700="background-position: 0px -350px;">
 		<div id="header">
 			<a href="https://ohmystats.com?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_logo-oms"><div id="logo-oms" class="fade-opacity"></div></a>
 		</div>
-		<div class="main-copy fade-bottom">
+		<div class="main-copy fade-bottom" data-100="opacity: 1;" data-300="opacity: 0;">
 			<p class="text-caps text-small">Двухдневный интенсив</p>
 			<h1><span class="text-huge">Ма&#x301;ркетинг</span><br>для интернет-предпринимателя</h1>
 			<p>ROI, конверсии, рассылки, контекстная реклама,<br>лендинги, A/B&nbsp;тесты и&nbsp;когортный анализ<br>для владельцев онлайн-бизнеса</p>
@@ -337,9 +338,9 @@
 		</div>
 		<div class="cta-btn-block">
 			<a class="btn btn-1c" href="http://brainwashing.pro/marketing#signup/32?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_cta-top">Записаться на курс</a>
-			<p class="text-small">Осталось <span class="available-seats"></span> из 14 мест</p>
+			<p class="text-small posrel" data--200-bottom="top: 100px; opacity: 0;" data--260-bottom="top: 0; opacity: 1;">Осталось <span class="available-seats"></span> из 14 мест</p>
 		</div>
-		<div id="subscribe-download" class="text-small">
+		<div id="subscribe-download" class="text-small" data--300-bottom="opacity: 0" data--320-bottom="opacity: 1">
 			<p><a class="link inverted" href="http://brainwashing.pro/l/marketing?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_subscribe-top">Подпишитесь и&nbsp;скачайте</a> страницу из материалов прошлого курса</p>
 		</div>
 	</div>
@@ -360,11 +361,11 @@
 		<div id="hosts-block">
 			<h2>Инструкторы</h2>
 			<div id="hosts">
-				<div id="host-ak">
+				<div id="host-ak" data-bottom="padding-top: 39px;" data--150-bottom="padding-top: 103px;">
 					<h3>Алексей Куличевский</h3>
 					<p>Со-основатель и&nbsp;CEO Oh&nbsp;My&nbsp;Stats. Ранее&nbsp;— директор по&nbsp;маркетингу Groupon&nbsp;Russia и&nbsp;главный по&nbsp;контексту в&nbsp;Островке.</p>
 				</div>
-				<div id="host-sk">
+				<div id="host-sk" data-bottom="padding-top: 39px;" data--150-bottom="padding-top: 103px;">
 					<h3>Светлана Кузьмина</h3>
 					<p>Консультант Oh&nbsp;My&nbsp;Stats. Ранее&nbsp;— директор по&nbsp;аналитике и&nbsp;Business Intelligence в&nbsp;Groupon&nbsp;Russia. Большой опыт в&nbsp;стратегическом консалтинге.</p>
 				</div>
@@ -442,7 +443,7 @@
 			</div>
 			<div class="cta-btn-block">
 				<a class="btn btn-1c" href="http://brainwashing.pro/marketing#signup/32?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_cta-middle">Записаться на курс</a>
-				<p class="text-small">Осталось <span class="available-seats"></span> из 14 мест</p>
+				<p class="text-small posrel" data--200-bottom="top: 100px; opacity: 0;" data--260-bottom="top: 0; opacity: 1;">Осталось <span class="available-seats"></span> из 14 мест</p>
 			</div>
 		</div>
 		<div id="testimonials-block">
@@ -513,7 +514,7 @@
 			<p>Если у&nbsp;вас N&nbsp;продаж и&nbsp;вы чувствуете, что можно 10&thinsp;&times;&thinsp;N и&nbsp;100&thinsp;&times;&thinsp;N,<br>но не&nbsp;знаете что сделать, то курс для вас</p>
 			<div class="cta-btn-block">
 				<a class="btn btn-1c" href="http://brainwashing.pro/marketing#signup/32?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_cta-middle">Записаться на курс</a>
-				<p class="text-small">Осталось <span class="available-seats"></span> из 14 мест</p>
+				<p class="text-small posrel" data--200-bottom="top: 100px; opacity: 0;" data--260-bottom="top: 0; opacity: 1;">Осталось <span class="available-seats"></span> из 14 мест</p>
 			</div>
 		</div>
 		<div id="ohmyblog">
@@ -557,10 +558,13 @@
 			</div>
 		</div>
 	</div>
+<script type="text/javascript" src="/vendor/skrollr.min.js"></script>
 <script type="text/javascript">
 (function() {
 
 	window.onload = function() {
+		var s = skrollr.init();
+
 		var availableSeats = 11;
 		placeAvailableSeatsNum(availableSeats);
 	};

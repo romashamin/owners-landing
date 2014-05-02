@@ -29,8 +29,19 @@
 	.clfx:after { content: " "; display: table; }
 	.clfx:after { clear: both; }
 
+	.bgimage {
+		width: 100%;
+		height: 760px;
+		padding-top: 100px;
+		background: rgb(255,72,16) url(/img/bg.jpg) no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+	#header { text-align: center; }
+
 	#main-container { width: 970px; margin: 0 auto; padding-top: 20px; }
-	#header { height: 120px; }
 	#logo-bw,
 	#logo-oms {
 		display: inline-block;
@@ -44,33 +55,20 @@
 		height: 52px;
 	}
 	#logo-oms {
-		margin-left: 66px;
 		background-image: url(/img/logo-oms@2x.png);
-		background-size: 100px 90px;
-		width: 100px;
-		height: 90px;
+		background-size: 73px 72px;
+		width: 73px;
+		height: 72px;
 	}
+	#logo-bw:hover, #logo-oms:hover { opacity: .7; }
 
-	#welcome-screen {
-		height: 430px;
-		background-image: url(/img/main@2x.jpg);
-		background-size: 670px 430px;
-		background-position: 76px 0;
-		background-repeat: no-repeat;
-	}
-	#welcome-copy { width: 570px; margin-top: 30px; }
+	.main-copy { margin-top: 100px; text-align: center; }
 
 	.cta { background-color: rgb(255,72,16); color: #fff; text-align: center; }
-	.cta-floor { margin-top: 0; padding: 76px 40px; }
-	.cta-btn-block	{ margin-top: 40px; }
+	.cta-floor { margin-top: 0; padding: 76px 40px 36px; }
+	.cta-btn-block	{ margin-top: 40px; margin-bottom: 40px; }
 
-	#cta-block { position: relative; width: 300px; top: -30px; }
-	#cta-top {
-		width: 300px;
-		padding: 30px 50px;
-	}
 	.single-date { display: inline-block; margin: 0 5px; }
-	#subscribe-download { position: relative; width: 190px; left: 100px; }
 
 	#course-value { margin-top: 50px; width: 680px; }
 
@@ -108,10 +106,11 @@
 	}
 	#author-sign { color: rgb(255,72,16); }
 
-	#cta-options, #addition-middle { width: 600px; margin: 0 auto; }
+	.cta-options, #addition-middle { width: 600px; margin: 0 auto; }
+	#dates-top, #address-top, #price-top-block,
 	#dates-middle, #address-middle, #price-middle-block { width: 200px; }
-	#dates-middle	{ padding-top: 7px; }
-	#price-middle	{ padding-top: 3px; }
+	#dates-top, #dates-middle	{ padding-top: 7px; }
+	#price-top, #price-middle	{ padding-top: 3px; }
 
 	#testimonials-block { padding-left: 76px; padding-right: 76px; }
 	.testimonial, .testimonial-big { position: relative; margin-top: 50px; margin-bottom: 50px; }
@@ -183,7 +182,7 @@
 	.shift-left	{ margin-left: 76px; }
 	.no-margin-no-padding { margin: 0; padding: 0; }
 
-	h1 { font-size: 60px; line-height: 68px; letter-spacing: -2px; }
+	h1 { font-size: 34px; line-height: 56px; }
 	h2 {
 		margin-top: 120px;
 		margin-bottom: 60px;
@@ -197,6 +196,7 @@
 	h3 + p { margin-top: 0; }
 	#welcome-copy h1 { margin: 0; }
 	.big-nums	{ display: block; font-size: 36px; }
+	.text-huge	{ font-size: 100px; letter-spacing: -2px; }
 	.text-lead	{ font-size: 24px; line-height: 38px; }
 	.text-small	{ font-size: 14px; line-height: 18px; }
 	.text-caps	{ text-transform: uppercase; letter-spacing: 2px; }
@@ -253,44 +253,44 @@
 </style>
 </head>
 <body>
-	<div id="main-container">
+	<div class="bgimage">
 		<div id="header">
 			<a href="https://ohmystats.com?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_logo-oms"><div id="logo-oms"></div></a>
 		</div>
-		<div id="welcome-screen" class="clfx">
-			<div id="welcome-copy" class="pull-left">
-				<p class="text-caps text-small">Двухдневный интенсив</p>
-				<h1>Ма&#x301;ркетинг<br>для интернет-<br>предпринимателя</h1>
-				<p>ROI, конверсии, рассылки, контекстная реклама, лендинги, A/B&nbsp;тесты и&nbsp;когортный анализ<br>для владельцев онлайн-бизнеса</p>
+		<div class="main-copy">
+			<p class="text-caps text-small">Двухдневный интенсив</p>
+			<h1><span class="text-huge">Ма&#x301;ркетинг</span><br>для интернет-предпринимателя</h1>
+			<p>ROI, конверсии, рассылки, контекстная реклама,<br>лендинги, A/B&nbsp;тесты и&nbsp;когортный анализ<br>для владельцев онлайн-бизнеса</p>
+		</div>
+	</div>
+	<div id="cta-top" class="cta cta-floor">
+		<div class="cta-options clfx">
+			<div id="dates-top" class="pull-left">
+				<div class="single-date">
+					<span class="big-nums">31</span><span>мая</span>
+				</div>
+				<div class="single-date">
+					<span class="big-nums">1</span><span>июня</span>
+				</div>
 			</div>
-			<div id="cta-block" class="pull-right">
-				<div id="cta-top" class="cta">
-					<div id="dates-top" class="clfx">
-						<div class="single-date">
-							<span class="big-nums">31</span><span>мая</span>
-						</div>
-						<div class="single-date">
-							<span class="big-nums">1</span><span>июня</span>
-						</div>
-					</div>
-					<a class="link inverted" href="http://maps.yandex.ru/-/CVf-YCj7">
-						<div id="address-top" class="text-small">
-							<p>Штаб-квартира Злых марсиан, Москва</p>
-						</div>
-					</a>
-					<div id="price-top">
-						<p class="big-nums">50&thinsp;000&nbsp;₷</p>
-					</div>
-					<div id="cta-btn-top">
-						<a class="btn btn-1c" href="http://brainwashing.pro/marketing#signup/32?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_cta-top">Записаться</a>
-						<span class="text-small">Осталось <span class="available-seats"></span> из 14 мест</span>
-					</div>
+			<a class="link inverted" href="http://maps.yandex.ru/-/CVf-YCj7">
+				<div id="address-top" class="text-small pull-left">
+					<p>Штаб-квартира Злых марсиан, Москва</p>
 				</div>
-				<div id="subscribe-download" class="text-small">
-					<p><a class="link" href="http://brainwashing.pro/l/marketing?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_subscribe-top">Подпишитесь и&nbsp;скачайте</a> страницу из материалов прошлого курса</p>
-				</div>
+			</a>
+			<div id="price-top-block" class="pull-left">
+				<div class="no-margin-no-padding">Стоимость</div><div id="price-top" class="big-nums">50&thinsp;000&nbsp;₷</div>
 			</div>
 		</div>
+		<div class="cta-btn-block">
+			<a class="btn btn-1c" href="http://brainwashing.pro/marketing#signup/32?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_cta-top">Записаться на курс</a>
+			<p class="text-small">Осталось <span class="available-seats"></span> из 14 мест</p>
+		</div>
+		<div id="subscribe-download" class="text-small">
+			<p><a class="link inverted" href="http://brainwashing.pro/l/marketing?utm_source=bw-owners-landing&utm_medium=landing&utm_campaign=bw-owners-landing_subscribe-top">Подпишитесь и&nbsp;скачайте</a> страницу из материалов прошлого курса</p>
+		</div>
+	</div>
+	<div id="main-container">
 		<div id="course-value" class="shift-left">
 			<div id="value-copy">
 				<p class="text-lead">Маркетолога нанимают после первого миллиона. До&nbsp;этого маркетингом занимается основатель. Курс знакомит с&nbsp;современными маркетинговыми инструментами, объясняет, как их применять, учит работать с&nbsp;данными и&nbsp;принимать решения на их основе.</p>
@@ -363,7 +363,7 @@
 			</div>
 		</div>
 		<div id="cta-middle" class="cta cta-floor">
-			<div id="cta-options" class="clfx">
+			<div class="cta-options clfx">
 				<div id="dates-middle" class="pull-left">
 					<div class="single-date">
 						<span class="big-nums">31</span><span>мая</span>

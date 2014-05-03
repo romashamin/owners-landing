@@ -78,15 +78,18 @@
 	.main-copy { margin-top: 100px; text-align: center; }
 
 	.social-buttons	{
-		width: 500px;
+		width: 400px;
 		margin: 0 auto;
 		margin-top: 40px;
+		padding-left: 50px;
 		opacity: 0;
 		overflow: hidden;
 		transition: opacity 200ms;
 	}
 	.is-sharing .social-buttons { opacity: 1; overflow: visible; }
-	.social-button	{ width: 200px; float: left; margin-left: 20px; }
+	.social-button	{ float: left; }
+	#fb-btn { width: 200px; }
+	#tw-btn { width: 140px; padding-top: 10px; }
 
 	.cta { background-color: rgb(255,72,16); color: #fff; text-align: center; }
 	.cta-floor { margin-top: 0; padding: 76px 40px 36px; }
@@ -348,10 +351,10 @@
 			<p>ROI, конверсии, рассылки, контекстная реклама,<br>лендинги, A/B&nbsp;тесты и&nbsp;когортный анализ<br>для владельцев онлайн-бизнеса</p>
 		</div>
 		<div class="social-buttons clfx">
-			<div class="social-button">
+			<div id="fb-btn" class="social-button">
 				<div class="fb-like" data-href="https://ohmystats.com/brainwashing/" data-width="200" data-layout="button_count" data-action="recommend" data-show-faces="false" data-share="true"></div>
 			</div>
-			<div class="social-button">
+			<div id="tw-btn" class="social-button">
 				<a href="https://twitter.com/share" class="twitter-share-button" data-text="Маркетинг для интернет-предпринимателя — курс от ex-CMO Groupon Russia" data-via="ohmystats" data-lang="ru" data-hashtags="brainwashingpro">Твитнуть</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 			</div>
